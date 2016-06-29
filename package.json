@@ -1,0 +1,40 @@
+{
+  "name": "mana.js",
+  "version": "0.0.0",
+  "description": "Creator of decision trees",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --require should --timeout=5000 test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rfink/mana.js.git"
+  },
+  "keywords": [
+    "tree",
+    "decision",
+    "mana",
+    "rules",
+    "rule",
+    "engine"
+  ],
+  "author": "Ryan Fink <ryanjfink@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rfink/mana.js/issues"
+  },
+  "homepage": "https://github.com/rfink/mana.js",
+  "devDependencies": {},
+  "dependencies": {
+    "grunt": "1.0.1",
+    "grunt-browserify": "5.0.0",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-jshint": "0.12.0",
+    "grunt-contrib-uglify": "1.0.1",
+    "load-grunt-tasks": "3.5.0",
+    "mocha": "2.5.3",
+    "require-grunt-configs": "0.5.0",
+    "should": "9.0.2",
+    "verdict.js": "0.1.*"
+  }
+}
