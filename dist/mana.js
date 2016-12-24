@@ -52,6 +52,25 @@ Mana.prototype.exec = function exec(context) {
 };
 
 /**
+ * Execute the rulesets on all nodes and return the first match
+ */
+Mana.prototype.execFirst = function execFirst(context) {
+  var toVisit = [this];
+  var cur = null;
+  while (toVisit.length) {
+    cur = toVisit.shift();
+    if (!cur.evaluate(context)) {
+      continue;
+    }
+    if (cur.isLeaf()) {
+      return cur;
+    }
+    toVisit = toVisit.concat(cur.children);
+  }
+  return null;
+};
+
+/**
  * Check if current tree is a leaf (no children)
  */
 Mana.prototype.isLeaf = function isLeaf() {
