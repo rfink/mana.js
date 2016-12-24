@@ -115,4 +115,33 @@ describe('Mana tree tests', function() {
     nodes[0].should.have.property('id', 3);
     return done();
   });
+
+  it('should execFirst correctly', function(done) {
+    var tree = mana.parse(treeJson);
+    var context = {
+      'email': 'wat@wut.com',
+      'name': {
+        'first': 'invalid',
+        'last': 'Dude'
+      }
+    };
+    var node = tree.execFirst(context);
+    should.exist(node);
+    node.should.have.property('id', 3);
+    return done();
+  });
+
+  it('should execFirst and return null', function(done) {
+    var tree = mana.parse(treeJson);
+    var context = {
+      'email': 'wat@whut.com',
+      'name': {
+        'first': 'invalid',
+        'last': 'Dude'
+      }
+    };
+    var node = tree.execFirst(context);
+    should.not.exist(node);
+    return done();
+  });
 });
