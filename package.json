@@ -1,6 +1,6 @@
 {
   "name": "mana.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Creator of decision trees",
   "main": "lib/index.js",
   "scripts": {
@@ -24,8 +24,10 @@
     "url": "https://github.com/rfink/mana.js/issues"
   },
   "homepage": "https://github.com/rfink/mana.js",
-  "devDependencies": {},
   "dependencies": {
+    "verdict.js": "0.1.*"
+  },
+  "devDependencies": {
     "grunt": "1.0.1",
     "grunt-browserify": "5.0.0",
     "grunt-contrib-clean": "1.0.0",
@@ -34,7 +36,6 @@
     "load-grunt-tasks": "3.5.0",
     "mocha": "2.5.3",
     "require-grunt-configs": "0.5.0",
-    "should": "9.0.2",
-    "verdict.js": "0.1.*"
+    "should": "9.0.2"
   }
 }
