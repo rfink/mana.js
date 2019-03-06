@@ -1,6 +1,6 @@
 {
   "name": "mana.js",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Creator of decision trees",
   "main": "lib/index.js",
   "scripts": {
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/rfink/mana.js",
   "dependencies": {
-    "verdict.js": "0.1.*"
+    "verdict.js": "1.0.*"
   },
   "devDependencies": {
     "grunt": "1.0.1",
